@@ -1,9 +1,7 @@
 name: Greetings
 
-on:
-  # Runs on pushes targeting the default branch
-  push:
-    branches: ["main"]
+on: [pull_request_target, issues]
+
 jobs:
   greeting:
     runs-on: ubuntu-latest
